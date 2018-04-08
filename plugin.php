@@ -1,8 +1,10 @@
 <?php
-namespace HelloWorld;
+namespace Thenobility;
 
-use HelloWorld\Widgets\Hello_World;
-use HelloWorld\Widgets\Inline_Editing;
+use Thenobility\Widgets\Thenobility_Heading;
+use Thenobility\Widgets\Thenobility_Various_Causes;
+use Thenobility\Widgets\Thenobility_Camps_Done;
+use Thenobility\Widgets\Thenobility_History_Section;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -61,8 +63,11 @@ class Plugin {
 	 * @access private
 	 */
 	private function includes() {
-		require __DIR__ . '/widgets/hello-world.php';
-		require __DIR__ . '/widgets/inline-editing.php';
+		require __DIR__ . '/widgets/heading.php';
+		require __DIR__ . '/widgets/various-causes.php';
+		require __DIR__ . '/widgets/camps-done.php';
+		require __DIR__ . '/widgets/history-section.php';
+		
 	}
 
 	/**
@@ -73,8 +78,11 @@ class Plugin {
 	 * @access private
 	 */
 	private function register_widget() {
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Hello_World() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Inline_Editing() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Heading() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Various_Causes() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Camps_Done() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_History_Section() );
+		
 	}
 }
 

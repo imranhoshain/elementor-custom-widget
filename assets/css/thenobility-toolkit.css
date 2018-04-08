@@ -1,0 +1,128 @@
+/*================================================
+[  Table of contents  ]
+================================================
+
+1. Slider Css
+
+2. Preloader Css
+
+3. Head Section Css
+
+4. History Section Css
+
+5. Room Section Css
+
+6. Isotop Style
+
+7. Testimonial Css
+
+8. Contact Page
+
+9. Room Archive Section
+
+10. Combo Offer Section
+
+11. Special Food
+
+12. Testimonial Slider
+
+13. Responsive css code
+
+/*======================================
+[ End table content ]
+======================================*/
+
+
+
+.causes-image {
+    height: 200px;
+}
+
+.causes-image > img {
+    height: 100% !important;
+}
+
+
+.about-image img {
+    width: 100%;
+    height: 455px !important;
+}
+
+
+
+
+
+
+/*=== Slider Css ===*/
+
+html {
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+/*----------------------
+# Responsive css code
+------------------------*/
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .header-top-left {
+        float: left;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+}
+
+/* Tablet and Mobile Layout: 768px. */
+
+@media only screen and (max-width: 991px) {
+
+    .kc-elm .restaurant-testi-area:first-child::after {
+        content: "";
+        background: none;
+
+    }
+
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .footer-top-area .widget,
+    .footer-top-area .widget:nth-child(2) {
+        width: auto;
+        text-align: center;
+        float: inherit;
+        padding: 40px 0 0 0;
+        margin-bottom: 0;
+    }
+
+    .footer-top-area .widget:last-child {
+        margin-bottom: 30px;
+    }
+
+
+    .site-branding ul li a {
+        color: #fff;
+        padding: 10px;
+    }
+
+
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
