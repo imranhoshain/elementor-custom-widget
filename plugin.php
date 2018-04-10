@@ -5,6 +5,10 @@ use Thenobility\Widgets\Thenobility_Heading;
 use Thenobility\Widgets\Thenobility_Various_Causes;
 use Thenobility\Widgets\Thenobility_Camps_Done;
 use Thenobility\Widgets\Thenobility_History_Section;
+use Thenobility\Widgets\Thenobility_Help_Section;
+use Thenobility\Widgets\Thenobility_Volunteer_Section;
+use Thenobility\Widgets\Thenobility_Donator_Section;
+use Thenobility\Widgets\Thenobility_Image_Gallery;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -67,6 +71,10 @@ class Plugin {
 		require __DIR__ . '/widgets/various-causes.php';
 		require __DIR__ . '/widgets/camps-done.php';
 		require __DIR__ . '/widgets/history-section.php';
+		require __DIR__ . '/widgets/help-section.php';
+		require __DIR__ . '/widgets/volunteer-section.php';
+		require __DIR__ . '/widgets/donators-section.php';
+		require __DIR__ . '/widgets/gallery-section.php';
 		
 	}
 
@@ -82,6 +90,10 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Various_Causes() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Camps_Done() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_History_Section() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Help_Section() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Volunteer_Section() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Donator_Section() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Image_Gallery() );
 		
 	}
 }
