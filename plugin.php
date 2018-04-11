@@ -8,7 +8,9 @@ use Thenobility\Widgets\Thenobility_History_Section;
 use Thenobility\Widgets\Thenobility_Help_Section;
 use Thenobility\Widgets\Thenobility_Volunteer_Section;
 use Thenobility\Widgets\Thenobility_Donator_Section;
-use Thenobility\Widgets\Thenobility_Image_Gallery;
+use Thenobility\Widgets\Thenobility_Gallery_Section;
+use Thenobility\Widgets\Thenobility_Event_Section;
+use Thenobility\Widgets\Thenobility_Testimonial_Section;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -75,6 +77,8 @@ class Plugin {
 		require __DIR__ . '/widgets/volunteer-section.php';
 		require __DIR__ . '/widgets/donators-section.php';
 		require __DIR__ . '/widgets/gallery-section.php';
+		require __DIR__ . '/widgets/event-section.php';
+		require __DIR__ . '/widgets/testimonial-section.php';
 		
 	}
 
@@ -93,7 +97,9 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Help_Section() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Volunteer_Section() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Donator_Section() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Image_Gallery() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Gallery_Section() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Event_Section() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Testimonial_Section() );
 		
 	}
 }

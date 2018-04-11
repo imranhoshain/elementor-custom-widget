@@ -90,7 +90,23 @@ add_filter( 'widget_text', 'do_shortcode' ); //For WP old version
  */
 include_once ('shortcodes/find-me-shortcode.php');
 
+
 /**
  * Implement Find me Addons.
  */
-include_once ('shortcodes/rt_heading.php');
+include_once ('shortcodes/gallery-section-shortcode.php');
+
+/**
+ * Implement Find me Addons.
+ */
+include_once ('shortcodes/event-section-shortcode.php');
+
+/**
+ * Implement Find me Addons.
+ */
+include_once ('shortcodes/custom-post.php');
+
+/**
+ * Implement Find me Addons.
+ */
+include_once ('shortcodes/testimonial-slider-shortcode.php');
