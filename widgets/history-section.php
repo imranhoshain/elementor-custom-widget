@@ -47,7 +47,7 @@ class Thenobility_History_Section extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'eicon-pojome';
+		return 'fa fa-history';
 	}
 
 	/**

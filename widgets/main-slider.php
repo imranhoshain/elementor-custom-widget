@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * @since 1.1.0
  */
-class Thenobility_Testimonial_Section extends Widget_Base {
+class Thenobility_Main_slider_Section extends Widget_Base {
 
 	/**
 	 * Retrieve the widget name.
@@ -21,7 +21,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'thenobility-testimonial';
+		return 'thenobility-main-slider';
 	}
 
 	/**
@@ -34,7 +34,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Thenobility Testimonial', 'thenobility-toolkit' );
+		return __( 'Thenobility Main Slider', 'thenobility-toolkit' );
 	}
 
 	/**
@@ -47,7 +47,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'eicon-testimonial';
+		return 'eicon-slider-push';
 	}
 
 	/**
@@ -80,7 +80,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
 	protected function _register_controls() {
 		// Content Controls
   		$this->start_controls_section(
-  			'thenobility_testi_slider',
+  			'thenobility_slider',
   			[
   				'label' => esc_html_x( 'Testimonial Section','Admin Panel','thenobility-toolkit' )
   			]
@@ -100,7 +100,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
 			[
 				'label' => __( 'Select Category', 'elementor' ),
 				'type' => Controls_Manager::SELECT,				
-				'options' => thenobility_testi_slider_category()
+				'options' => thenobility_theme_slider_category()
 			]
 		); 
         
@@ -121,7 +121,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
           $this->add_control(
 			'dot',
 			[
-				'label' => __( 'Slider Loop', 'elementor' ),
+				'label' => __( 'Slider Dot', 'elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'true',
 				'options' => [
@@ -135,7 +135,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
           $this->add_control(
 			'nav',
 			[
-				'label' => __( 'Slider Loop', 'elementor' ),
+				'label' => __( 'Slider Nav', 'elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'true',
 				'options' => [
@@ -150,7 +150,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
          $this->add_control(
 			'autoplay',
 			[
-				'label' => __( 'Slider Loop', 'elementor' ),
+				'label' => __( 'Slider Autoplay', 'elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'true',
 				'options' => [
@@ -189,7 +189,7 @@ class Thenobility_Testimonial_Section extends Widget_Base {
         
 		$settings = $this->get_settings();             
 
-    echo thenobility_testi_slider_shortcode($settings);            
+    echo thenobility_slider_shortcode($settings);            
 
 
 	}

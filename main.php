@@ -109,4 +109,9 @@ include_once ('shortcodes/custom-post.php');
 /**
  * Implement Find me Addons.
  */
+include_once ('shortcodes/slider-shortcode.php');
+
+/**
+ * Implement Find me Addons.
+ */
 include_once ('shortcodes/testimonial-slider-shortcode.php');

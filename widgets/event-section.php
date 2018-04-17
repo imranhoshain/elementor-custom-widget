@@ -47,7 +47,7 @@ class Thenobility_Event_Section extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'fa fa-pencil';
+		return 'fa fa-calendar';
 	}
 
 	/**

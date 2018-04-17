@@ -6,32 +6,151 @@
 
 2. Preloader Css
 
-3. Head Section Css
-
-4. History Section Css
-
-5. Room Section Css
-
-6. Isotop Style
-
-7. Testimonial Css
-
-8. Contact Page
-
-9. Room Archive Section
-
-10. Combo Offer Section
-
-11. Special Food
-
-12. Testimonial Slider
-
-13. Responsive css code
+3. Responsive css code
 
 /*======================================
 [ End table content ]
 ======================================*/
 
+/*=== Slider Css ===*/
+
+html {
+    overflow-x: hidden;
+}
+
+.thenobility-slider-wrapper {
+    position: relative;
+    height: 580px;
+}
+
+.thenobility-single-slide {
+    background-color: #ddd;
+    background-position: center center;
+    background-size: cover;
+    display: table;
+    font-size: 16px;
+    font-weight: 300;
+    height: 580px;
+    position: relative;
+    width: 100%;
+
+}
+
+.thenobility-single-slide-inner p {
+    margin-bottom: 20px;
+}
+
+.thenobility-isotop .post-thumbnail img {
+    width: 100%;
+}
+
+
+.thenobility-single-slide-inner {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: auto;
+}
+
+.thenobility-single-slide h2 {
+    font-size: 40px;    
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.097;
+}
+
+.header-top-right .booking-btn {
+    background: #0d68ff none repeat scroll 0 0;
+    padding: 16px;
+}
+
+
+.thenobility_slider .owl-nav div {
+    font-size: 50px;
+    left: 50px;
+    line-height: 60px;
+    margin-top: -30px;
+    position: absolute;
+    top: 50%;
+}
+
+.thenobility_slider .owl-nav .owl-next {
+    left: 50px;
+    right: auto;
+}
+
+.thenobility_slider .owl-nav div.owl-next {
+    left: auto;
+    right: 50px;
+}
+
+.thenobility_slider .owl-dots div {
+    border: 1px solid #0d68ff;
+    display: inline-block;
+    height: 10px;
+    margin-right: 6px;
+    width: 10px;
+    text-align: center;
+}
+
+.thenobility_slider .owl-dots div.active {
+    background: #0d68ff none repeat scroll 0 0;
+}
+
+.thenobility_slider .owl-dots {
+    bottom: 25%;
+    left: 49%;
+    position: absolute;
+}
+
+.thenobility-slide-overlay {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+.thenobility-single-slide h2 {
+    margin-bottom: 30px;
+}
+
+.thenobility-single-slide-inner a.booking-btn {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/*=== Preloader Css ===*/
+
+.thenobility-slider-preloder {
+    position: absolute;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.thenobility-slider-preloder span {
+    font-size: 50px;
+    height: 50px;
+    left: 50%;
+    line-height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 50px;
+}
+
+.thenobility-slider-wrapper {
+    position: relative;
+    height: 580px;
+}
 
 
 .causes-image {
@@ -50,22 +169,8 @@
 
 
 
-
-
-
-/*=== Slider Css ===*/
-
-html {
-    overflow-x: hidden;
-}
-
-
-
-
-
-
 /*----------------------
-# Responsive css code
+# Responsive css
 ------------------------*/
 
 /* Medium Layout: 1280px. */
@@ -86,7 +191,7 @@ html {
 
 @media only screen and (max-width: 991px) {
 
-    .kc-elm .restaurant-testi-area:first-child::after {
+    .kc-elm .thenobility-testi-area:first-child::after {
         content: "";
         background: none;
 

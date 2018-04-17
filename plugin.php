@@ -11,6 +11,7 @@ use Thenobility\Widgets\Thenobility_Donator_Section;
 use Thenobility\Widgets\Thenobility_Gallery_Section;
 use Thenobility\Widgets\Thenobility_Event_Section;
 use Thenobility\Widgets\Thenobility_Testimonial_Section;
+use Thenobility\Widgets\Thenobility_Main_slider_Section;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -45,7 +46,7 @@ class Plugin {
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'on_widgets_registered' ] );
 
 		add_action( 'elementor/frontend/after_register_scripts', function() {
-			wp_register_script( 'hello-world', plugins_url( '/assets/js/hello-world.js', ELEMENTOR_HELLO_WORLD__FILE__ ), [ 'jquery' ], false, true );
+			wp_register_script( 'hello-world', plugins_url( '/assets/js/hello-world.js' ), [ 'jquery' ], false, true );
 		} );
 	}
 
@@ -79,6 +80,7 @@ class Plugin {
 		require __DIR__ . '/widgets/gallery-section.php';
 		require __DIR__ . '/widgets/event-section.php';
 		require __DIR__ . '/widgets/testimonial-section.php';
+		require __DIR__ . '/widgets/main-slider.php';
 		
 	}
 
@@ -100,6 +102,7 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Gallery_Section() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Event_Section() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Testimonial_Section() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Thenobility_Main_slider_Section() );
 		
 	}
 }

@@ -47,7 +47,7 @@ class Thenobility_Heading extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'fa fa-pencil';
+		return 'eicon-heading';
 	}
 
 	/**
